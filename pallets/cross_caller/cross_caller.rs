@@ -16,6 +16,9 @@ use ink_lang as ink;
 //                "rlib",
 //            ]
 
+//      NOTE:  The rlib file is a static file that contains the library's metadata that allows the compiler to link the library into other libraries 
+//             (i.e., those that import the library as a dependency).
+
 //   C. Import the callee as a dependency such as here:
 //            cross_callee = { path = "../cross_callee", version = "0.1.0", default-features = false, features = ["ink-as-dependency"] }
 

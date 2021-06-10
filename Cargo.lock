@@ -1059,6 +1059,33 @@ dependencies = [
 ]
 
 [[package]]
+name = "cross_callee"
+version = "0.1.0"
+dependencies = [
+ "ink_env",
+ "ink_lang",
+ "ink_metadata",
+ "ink_primitives",
+ "ink_storage",
+ "parity-scale-codec",
+ "scale-info",
+]
+
+[[package]]
+name = "cross_caller"
+version = "0.1.0"
+dependencies = [
+ "cross_callee",
+ "ink_env",
+ "ink_lang",
+ "ink_metadata",
+ "ink_primitives",
+ "ink_storage",
+ "parity-scale-codec",
+ "scale-info",
+]
+
+[[package]]
 name = "crossbeam-channel"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1279,19 +1306,6 @@ checksum = "f0f83e699727abca3c56e187945f303389590305ab2f0185ea445aa66e8d5f2a"
 dependencies = [
  "data-encoding",
  "syn",
-]
-
-[[package]]
-name = "delegator"
-version = "0.0.1"
-dependencies = [
- "ink_env",
- "ink_lang",
- "ink_metadata",
- "ink_primitives",
- "ink_storage",
- "parity-scale-codec",
- "scale-info",
 ]
 
 [[package]]
@@ -1613,6 +1627,19 @@ dependencies = [
  "libc",
  "libz-sys",
  "miniz_oxide",
+]
+
+[[package]]
+name = "flipper"
+version = "0.1.0"
+dependencies = [
+ "ink_env",
+ "ink_lang",
+ "ink_metadata",
+ "ink_primitives",
+ "ink_storage",
+ "parity-scale-codec",
+ "scale-info",
 ]
 
 [[package]]
@@ -2578,7 +2605,6 @@ dependencies = [
  "funty",
  "ink_env",
  "ink_lang_macro",
- "ink_metadata",
  "ink_prelude",
  "ink_primitives",
  "ink_storage",
@@ -3887,6 +3913,17 @@ dependencies = [
  "smallvec 1.6.1",
  "unsigned-varint 0.7.0",
 ]
+
+[[package]]
+name = "my_lib"
+version = "0.1.0"
+dependencies = [
+ "my_lib_to_import",
+]
+
+[[package]]
+name = "my_lib_to_import"
+version = "0.1.0"
 
 [[package]]
 name = "nalgebra"
